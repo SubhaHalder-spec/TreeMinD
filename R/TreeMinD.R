@@ -12,7 +12,7 @@
 TreeMinD <- function(sample_data, significance_level){
   set.seed(456)
   sample_data <- lapply(sample_data, function(x) x[!is.na(x)])
-  num_samples = 10000
+  num_samples = 20000
   num_datasets <- length(sample_data)
   n <- sapply(sample_data, length)
   D_star_min <- numeric(num_samples)
